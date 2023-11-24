@@ -1,0 +1,34 @@
+create database prova_vitor_antonio;
+
+USE prova_vitor_antonio;
+
+CREATE TABLE pessoa(
+id int(11)PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome VARCHAR (4000) NOT NULL
+);
+
+SET SQL_MODE="";
+
+SET SQL_MODE='STRICT_ALL_TABLES';
+
+SELECT COUNT(*) FROM pessoa;
+
+SELECT id, nome FROM pessoa WHERE id = '17';
+
+SELECT nome FROM pessoa WHERE nome = 'IVAN MAX FREIRE DE LACERDA';
+
+UPDATE pessoa SET nome = 'VITOR ANTONIO DA LUZ BESSA' WHERE id = 17;
+
+UPDATE pessoa SET nome = 'VITOR ANTONIO DA LUZ BESSA' WHERE id = 170;
+
+UPDATE pessoa SET nome = 'VITOR ANTONIO DA LUZ BESSA' WHERE id = 1700;
+
+
+
+CREATE TABLE unidade_requisitante(
+id int(11)PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    unidade VARCHAR (4000) NOT NULL
+);
+
+
+SELECT unidade FROM unidade_requisitante WHERE unidade like '%17%';
