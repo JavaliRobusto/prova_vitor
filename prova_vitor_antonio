@@ -25,10 +25,3 @@ UPDATE pessoa SET nome = 'VITOR ANTONIO DA LUZ BESSA' WHERE id = 1700;
 
 
 
-CREATE TABLE unidade_requisitante(
-id int(11)PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    unidade VARCHAR (4000) NOT NULL
-);
-
-
-SELECT unidade FROM unidade_requisitante WHERE unidade like '%17%';
